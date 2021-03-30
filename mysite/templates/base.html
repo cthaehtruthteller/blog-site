@@ -1,12 +1,12 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>My Django Blog</title>
-        <link type="text/css" rel="stylesheet" href="{% static 'django_blog.css' %}>
+        <link type="text/css" rel="stylesheet" href="{% static 'django_blog.css' %}">
     </head>
     <body>
-        <div id="header>
+        <div id="header">
             <ul id="control-bar">
             {% if user.is_authenticated %}
                 {% if user.is_staff %}
